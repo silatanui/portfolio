@@ -6,16 +6,26 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+.one{
+    background-color: #000000;
+    color: white;
+    justify-content: end;
+    gap: 20px;
+}
 nav{
     display: flex;
     box-shadow: 2px 2px 10px gray;
     justify-content: space-between;
+    background-color: white;
     padding: 11px 5%;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 12;
 }
 .logo{
     font-size: 2rem;
+    position: relative;
 }
 span{
     color: red;
@@ -53,10 +63,12 @@ li:hover{
 }
 
 .hero{
+    height: 80vh;
     display: flex;
     align-items: center;
     padding: 30px;
     border-bottom: 1px solid rgb(218, 201, 201);
+    position: relative;
 }
 .hero_name{
     margin: 10px 0px;
@@ -88,23 +100,60 @@ li:hover{
 .icons .fa:hover{
     color: red;
 }
-.red_art{
+/* .red_art{
     position: absolute;
     right: 80px;
     top: 0px;
     width: 40%;
     z-index: -1;
+} */
+
+.red_line_art{
+    position: absolute;
+    right: 70px;   
+    bottom: 110px;    
+    z-index: -1;                                                          
 }
 
-.cube{
-    box-shadow: 5px 5px 20px;
+.section{
+    width: 100%;
+    background-image: radial-gradient(rgb(197, 189, 189),rgb(4, 144, 144));
 }
-.card_btn{
-    background-color: green;
+.section .section_header{
+    color: red;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.section_text{
+    text-align: center;
+    width: 70%;
+    margin:10px auto;
+}
+
+
+.about_me{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 6%;
+    align-items: center;
+    position: relative;
+    
+}
+.aside{
+    width: 50%;
+}
+.aside p{
+    text-align: justify;
+}
+.aside button{
+    background-color: red;
     width: 40%;
-    margin: auto;
+    margin:20px auto;
     display: block;
     color: white;
     border: none;
     height: 33px;
+}
+.aside button:hover{
+    background-color: rgb(209, 26, 26);
 }
