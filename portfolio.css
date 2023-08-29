@@ -7,16 +7,21 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* ################################################################# */
 
 /* HEADER SECTION */
 
 /* ################################################################# */
-.one{
+.header{
     background-color: #000000;
     color: white;
     justify-content: end;
     gap: 20px;
+    width: 100%;
 }
 
 /* ################################################################# */
@@ -42,20 +47,20 @@ nav{
 span{
     color: red;
 }
-ul{
+nav ul{
     display: flex;
     gap: 15%;
     list-style: none;
 }
 
-a{
+nav ul a{
     text-decoration: none;
     color: rgb(51, 48, 48);
 }
-li{
+nav ul a li{
     padding: 10px;
 }
-li:hover{
+nav ul li:hover{
     background-color: red;
     color: white;
 }
@@ -154,6 +159,22 @@ li:hover{
     align-items: center;
     padding: 30px;
     position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width : 976px){
+    .hero{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.hero .footer_side .one{
+    width: 50%;
 }
 .hero_name{
     margin: 10px 0px;
@@ -447,8 +468,143 @@ li:hover{
     color: #fff; 
     font-weight: bold;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .cta-button:hover {
     background-color: red;
+}
+
+
+/*###################################################
+CONTACT US SECTION
+##################################################### */
+
+/* Contact Us */
+.contact-us{
+    margin: 10px;
+}
+.contact-container{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px gray;
+    width: 80%;
+    margin: auto;
+}
+.contact-details, .contact-form {
+    width: 49%;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+.contact-details h2 .contact-form h2{
+    color: var(--pepsi-red);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    /* outline: 1px solid var(--pepsi-blue); */
+    outline: none;
+}
+
+.form_submit {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin:20px auto;
+    display: block;
+}
+
+.form_submit:hover {
+    background-color: red;
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px){
+    .contact-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+}
+
+/*###################################################
+FOOTER SECTION
+##################################################### */
+.footer{
+    background-color:  black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    font-family: "Montserrat";
+    margin: 10px 0px;
+}
+.one{
+    width: 35%;
+}
+@media screen and (max-width: 976px){
+    .footer{
+        background-color:  black;
+        color: white;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        margin: 5px 0px;
+    }
+    .one{
+        width: 100%;
+    }
+}
+
+.footer_icons{
+    display: flex;
+    gap: 20px;
+}
+.one p{
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+}
+
+.footer_side{
+    margin-top: 30px;
+}
+
+.footer_side h2{
+    color: var(--pepsi-red);
+    margin-bottom: 10px;
+}
+.footer_side ul{
+    list-style: none;
+}
+.footer_side ul li:hover{
+     color: rgb(216, 41, 41);
 }
