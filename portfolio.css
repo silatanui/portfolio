@@ -257,6 +257,7 @@ li:hover{
 }
 .aside p{
     text-align: justify;
+    font-size: .9rem;
 }
 .aside button{
     background-color: red;
