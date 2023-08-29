@@ -196,7 +196,7 @@ li:hover{
 /* Media query for small screens */
 @media screen and (max-width: 960px) {
     .hero{
-        height: 70vh;
+        /* height: 80vh; */
         display: flex;
         align-items: center;
         padding: 30px;
