@@ -405,3 +405,50 @@ li:hover{
 .products .cards .card_btn:hover{
     background-color: rgb(211, 40, 40);
 }
+
+/* ################################################################# */
+
+/* CTA */
+
+/* ################################################################# */
+
+.cta-section {
+    margin-top: 40px;
+    background-image: url(images/cta.png);
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent black overlay */
+    background-blend-mode: overlay; /* Ensure the image and color blend well */
+    padding: 50px 0;
+    text-align: center;
+    color: white; /* Set text color to white */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: .9rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 8px 25px;
+    background-color: #e91717;
+    color: #fff; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: red;
+}
