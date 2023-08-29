@@ -212,11 +212,9 @@ li:hover{
 }
 .section_text{
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin:10px auto;
 }
-
-
 .about_me{
     display: flex;
     justify-content: space-between;
@@ -244,6 +242,32 @@ li:hover{
     background-color: rgb(209, 26, 26);
 }
 
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .section_text{
+        text-align: center;
+        /* width: 100%; */
+        /* margin:10px auto; */
+    }
+    .about_me{
+        display: flex;
+        flex-direction: column;
+        padding:0px 6%;
+        align-items: center;
+        position: relative;  
+    }
+    .hero_name{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    .about_art{
+        width:100%;
+    }
+    .aside{
+        width: 100%;
+    }
+}
+
 /* ################################################################# */
 
 /* SERVICES */
@@ -260,18 +284,23 @@ li:hover{
 }
 .services{
     display: flex;
+    justify-content:space-around;
     align-items: center;
-    width: 90%;
+    flex-wrap: wrap;
+
+    gap: 1%;
+    width: 96%;
     margin: auto;
-    gap: 2%;
-    margin: 20px;
 }
 .services .card{
-    /* width: 50%; */
+    width: 32%;
     background-color: rgb(230, 235, 240);
     padding: 10px;
     text-align: center;
     transition: all .3s;
+    min-width: 320px;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 .services .card:hover{
     box-shadow:1px 1px 10px gray;
@@ -297,6 +326,8 @@ li:hover{
 .services .card .card_btn:hover{
     background-color: rgb(204, 58, 58);
 }
+
+
 
 /* ################################################################# */
 
